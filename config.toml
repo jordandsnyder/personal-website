@@ -1,0 +1,50 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Jordan D. Snyder"
+theme = "hugo-lithium"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    pre = ""
+    url = "/about/"
+    weight = 1
+[[menu.main]]
+    name = "GitHub"
+    pre = "fa-github-square"
+    url = "https://github.com/jordandsnyder"
+    weight = 2
+[[menu.main]]
+    name = "Twitter"
+    pre = "fa-twitter-square"
+    url = "https://twitter.com/jordan_d_snyder"
+    weight = 3
+[[menu.main]]
+    name = "Posts"
+    pre = "fa-bullhorn"
+    url = "/post/"
+    weight = 4
+[params]
+    description = "My personal website."
+    
+    customCSS = ["css/datateka.css", "css/font-awesome.min.css"]
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    [params.logo]
+    url = "logo1.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
